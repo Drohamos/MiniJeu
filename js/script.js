@@ -29,8 +29,7 @@ $(document).ready(function () {
     }
 
     console.log(positionHero);
-
-
+	
 
     // RECUPERATION DE LA TAILLE D'ECRAN
 
@@ -43,7 +42,16 @@ $(document).ready(function () {
     }
 
 
+	// Test spawn des Stormtroopers
+	// SPAWN DES STORMTROOPERS
+	function spawnTrooper() {
+		$('#imgHeroStart .center').append('<img class="stormTrooper" id="' + Date.now() + '" src="img/stormTrooper.png" />');
+		setTimeout(spawnTrooper, Math.floor((Math.random() * 2000) + 500));
+	}
 
+	spawnTrooper();
+	
+	
 
     // bloquer le depacement du Hero
 
