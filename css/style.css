@@ -1,0 +1,47 @@
+body{
+    background-image: url(../img/fond.jpg);
+    -moz-user-select:none;
+    -webkit-user-select:none;
+    -o-user-select:none;
+}
+
+
+#tailleGlobalJeu {
+    width: 100%;
+    height: 100%;
+       
+        
+    overflow: hidden;
+}
+
+
+#imgHeroStart{
+    
+    position: relative;
+    top: 80%;
+
+}
+
+#imgHeroVaisseau {
+    position: relative;
+    width: 116px;
+    height: 148px;
+    margin-left: 63px;
+    
+}
+
+.center{
+    text-align: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+#tirHero {
+    opacity: 0;
+    position: relative;
+    
+}
