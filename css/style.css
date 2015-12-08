@@ -3,22 +3,22 @@ body{
     -moz-user-select:none;
     -webkit-user-select:none;
     -o-user-select:none;
+    margin: 0;
+    height: 100vh;
 }
 
 
 #tailleGlobalJeu {
     width: 100%;
     height: 100%;
-       
         
     overflow: hidden;
 }
 
 
 #imgHeroStart{
-    
     position: relative;
-    top: 80%;
+    bottom: 0;
 
 }
 

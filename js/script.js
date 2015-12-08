@@ -42,11 +42,19 @@ $(document).ready(function () {
     }
 
 
-	// Test spawn des Stormtroopers
+    var stormTroopers = {};
+
 	// SPAWN DES STORMTROOPERS
 	function spawnTrooper() {
-		$('#imgHeroStart .center').append('<img class="stormTrooper" id="' + Date.now() + '" src="img/stormTrooper.png" />');
-		setTimeout(spawnTrooper, Math.floor((Math.random() * 2000) + 500));
+        var idTrooper = Date.now();
+
+        stormTroopers[stormTroopers.length] = idTrooper;
+
+		$('#tailleGlobalJeu').prepend('<img class="stormTrooper" id="' + idTrooper + '" src="img/stormTrooper.png" />');
+
+        JSON.stringify(stormTroopers);
+
+        setTimeout(spawnTrooper, Math.floor((Math.random() * 2000) + 500));
 	}
 
 	spawnTrooper();
